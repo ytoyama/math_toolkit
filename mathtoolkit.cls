@@ -13,6 +13,9 @@
 
 \newcommand\nth[1]{\title{Mathematical Toolkit Assignment #1}}
 
+\let\oldtext\text
+\renewcommand\text[1]{\oldtext{ #1 }}
+
 \newcommand\field[1]{\mathbb{#1}}
 \renewcommand\vec[1]{\mathbf{#1}}
 
@@ -24,7 +27,7 @@
 \newcommand\mnull[1]{\mathrm{null}(#1)}
 
 \newcommand\ip[2]{\langle  #1, #2 \rangle}
-\newcommand\st{\text{s.t.}\ }
+\newcommand\st{\text{s.t.}}
 
 \let\oldtherefore\therefore
 \renewcommand\therefore{\oldtherefore~}
