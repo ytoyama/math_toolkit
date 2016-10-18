@@ -7,3 +7,8 @@
 \RequirePackage{amsmath}
 
 \author{Yota Toyama}
+
+
+% commands
+
+\newcommand{\w}[1]{\mathbd{#1}}
