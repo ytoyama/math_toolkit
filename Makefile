@@ -1,6 +1,6 @@
 .SUFFIXES: .pdf .tex
 
-.tex.pdf:
+.tex.pdf: ../mathtoolkit.cls
 	for i in 1 2; do TEXINPUTS=..:$$TEXINPUTS lualatex ${.IMPSRC}; done
 
 default: notes.pdf
