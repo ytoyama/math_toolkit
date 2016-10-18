@@ -6,6 +6,7 @@
 
 \RequirePackage{amsmath}
 \RequirePackage{amsfonts}
+\RequirePackage{amssymb}
 
 \author{Yota Toyama}
 
