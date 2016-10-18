@@ -8,25 +8,25 @@
   \item
     \begin{subp}
       \item
-        \begin{gather}
+        \begin{gather*}
           dim(A) = rank(A) + null(A) \\
           n = m + null(A) \\
           null(A) = n - m
-        \end{gather}
+        \end{gather*}
       \item
-        \begin{gather}
+        \begin{gather*}
           null(A) = dim(\ker{A})
-        \end{gather}
+        \end{gather*}
         Then, $\ker{A}$ can have a basis $B$ s.t. $\vspan{B} = \ker{A}$.
         i.e.
-        \begin{gather}
+        \begin{gather*}
           \forall \vec{v} \in \ker{A},
           \exists a_1, ..., a_{n-m} \in \field{F}_2, \\
           \vec{v} = a_1 \vec{b}_1 + \dots + a_{n-m} \vec{b}_{n-m} (b_i \in B)
-        \end{gather}
+        \end{gather*}
         \therefore The answer is $2^{n-m}$.
       \item
-        \begin{gather}
+        \begin{gather*}
           \forall \vec{x}
           \text{s.t.}
           \begin{cases}
@@ -35,12 +35,12 @@
           \end{cases} \\
           \therefore A (\vec{x} - \vec{x}_0) = 0 \\
           \vec{x} - \vec{x}_0 \in \ker{A}
-        \end{gather}
+        \end{gather*}
         Then, choosing each element of $\vec{x}$ carefully (1 or 0),
         $\vec{x} - \vec{x}_0$ can be any element of $\field{F}^n_2$.
-        \begin{gather}
+        \begin{gather*}
           \therefore \left\{ \vec{x} - \vec{x}_0 | A \vec{x} = b \right\} = \ker{A}
-        \end{gather}
+        \end{gather*}
         \therefore $\vec{x} - \vec{x}_0$ has $2^{n-m}$ solutions. \\
         \therefore $\vec{x}$ has $2^{n-m}$ solutions. \\
     \end{subp}
@@ -48,94 +48,94 @@
   \item
     \begin{subp}
       \item
-        \begin{gather}
+        \begin{gather*}
           f(c \vec{v} + (-c) \vec{v}) \ge \min \left\{ f(\vec{v}), f(\vec{v}) \right\} \\
           \therefore f(\vec{0}_V) \ge f(\vec{v})
-        \end{gather}
+        \end{gather*}
       \item
         Because every element $\vec{v}_t \in V_t$ is in V by definition.
-        \begin{gather}
+        \begin{gather*}
           V_t \subseteq V
-        \end{gather}
+        \end{gather*}
     \end{subp}
 
   \item
-    \begin{align}
+    \begin{align*}
       p(x) & = x^2 + bx +c \\
            & = (x - r_1) (x - r_2) \\
            & = x^2 - (r_1 + r_2) x + r_1 r_2 \\
-    \end{align}
-    \begin{gather}
+    \end{align*}
+    \begin{gather*}
       \therefore b = - r_1 - r_2, c = r_1 r_2 \\
-    \end{gather}
+    \end{gather*}
 
   \item
-    \begin{align}
+    \begin{align*}
       \mu(P, Q) & = degree(PQ) \\
                 & = degree(QP) \\
                 & = \mu(Q, P)
-    \end{align}
-    \begin{align}
+    \end{align*}
+    \begin{align*}
       \mu(0, 0) & = degree(0) \\
                 & = 0
-    \end{align}
-    \begin{align}
+    \end{align*}
+    \begin{align*}
       \forall P \ne 0, \\
       \mu(P, P) & = degree(P^2) \\
                 & = 2 degree(P) \\
                 & > 0
-    \end{align}
-    \begin{align}
+    \end{align*}
+    \begin{align*}
       \mu(P + Q, R) & = degree((P + Q) R) \\
                     & = \max \left\{ degree(P), degree(Q) \right\} + degree(R)
-    \end{align}
-    \begin{align}
+    \end{align*}
+    \begin{align*}
       \mu(P, R) + \mu(Q, R) & = \max \left\{ degree(P) + degree(R), degree(Q) + degree(R) \right\} \\
                             & = \max \left\{ degree(P), degree(Q) \right\} + degree(R)
-    \end{align}
-    \begin{gather}
+    \end{align*}
+    \begin{gather*}
       \therefore \mu(P + Q, R) = \mu(P, R) + \mu(P, Q)
-    \end{gather}
-    \begin{align}
+    \end{gather*}
+    \begin{align*}
       c \in \field{R}, \\
       \mu(cP, R) & = degree(cPR) \\
                  & = degree(PR) \\
                  & \ne c \cdot degree(P, R)
-    \end{align}
+    \end{align*}
     \therefore $\mu(\cdot, R)$ is not a LT. \\
     \therefore $\mu$ is not a IP.
 
   \item
-    \begin{gather}
+    \begin{gather*}
       \alpha \beta \vec{x} = \lambda \vec{x} \\
       \beta \alpha \beta \vec{x} = \beta (\lambda \vec{x}) \\
       \beta \alpha (\beta \vec{x}) = \lambda (\beta \vec{x}) \\
-    \end{gather}
+    \end{gather*}
     \therefore $\lambda$ is an eigenvalue of $\beta \alpha$.
 
   \item
     \begin{subp}
       \item
-        \begin{gather}
+        \begin{gather*}
           \varphi(\vec{v}) = \lambda \vec{v} \\
           \varphi(\vec{v}) = \lambda \varphi(\vec{v}) \\
           (\lambda - 1) \varphi(\vec{v}) = 0 \\
           \lambda = 1_\field{F} \vee \varphi(\vec{v}) = 0 \\
           \lambda = 1_\field{F} \vee \varphi(\vec{v}) = 0_\field{F} \vec{v} \\
           \therefore \lambda \in \left\{ 0_\field{F}, 1_\field{F} \right\}
-        \end{gather}
+        \end{gather*}
 
       \item
         Let $\forall \vec{v}, \varphi(\vec{v}) = \vec{v}_0$.
         ($\vec{v}_0$ is fixed.) \\
         Then assume $\varphi = \varphi^*$. \\
         If $\vec{v} \ne \vec{w} \in V$,
-        \begin{gather}
+        \begin{gather*}
           \ip{\vec{v}_0}{\vec{w}} = \ip{\vec{v}}{\varphi^*(\vec{w})} \\
           \ip{\vec{v}_0}{\vec{w}} = \ip{\vec{v}}{\vec{v}_0} \\
           \ip{\vec{w}}{\vec{v}_0} = \ip{\vec{v}}{\vec{v}_0} \\
           \vec{v} = \vec{w}
-        \end{gather}
+        \end{gather*}
         This is contradition. \\
         \therefore not always $\varphi = \varphi^*$.
     \end{subp}
@@ -143,13 +143,13 @@
   \item
     \begin{subp}
       \item
-        \begin{gather}
+        \begin{gather*}
           \ip{\varphi(\vec{v})}{\vec{w}} = \ip{\vec{v}}{\varphi^*(\vec{w})} \\
           \ip{\varphi^*(\vec{w})}{\vec{v}} = \ip{\vec{w}}{\varphi(\vec{w})} \\
           \therefore (\varphi^*)^* = \varphi
-        \end{gather}
+        \end{gather*}
       \item
-        \begin{gather}
+        \begin{gather*}
           \forall \vec{v} \in \ker{\varphi}, \varphi(\vec{v}) = 0 \\
           \forall \vec{v'} \in (\im{\varphi^*})^\perp, \forall \vec{w} \in W, \\
           \ip{\vec{v}}{\varphi^*(\vec{w})} = 0 \\
@@ -159,7 +159,7 @@
           \therefore \forall \vec{w}, \ip{\varphi(\vec{v})}{\vec{w}} = 0 \\
                                       \ip{\vec{v}}{\varphi^*(\vec{w})} = 0 \\
                                       \vec{v} \in (\im{\varphi^*})^\perp \\
-        \end{gather}
+        \end{gather*}
     \end{subp}
 \end{p}
 
