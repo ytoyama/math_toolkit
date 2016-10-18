@@ -5,10 +5,12 @@
 \ProcessOptions
 
 \RequirePackage{amsmath}
+\RequirePackage{amsfonts}
 
 \author{Yota Toyama}
 
 
 % commands
 
-\newcommand{\w}[1]{\mathbf{#1}}
+\renewcommand\vec[1]{\mathbf{#1}}
+\newcommand\set[1]{\mathbb{#1}}
