@@ -5,9 +5,35 @@
 \begin{p}
   \item
     \begin{subp}
-      \begin{gather}
-        foo
-      \end{gather}
+      \item
+        \begin{gather}
+          dim(A) = rank(A) + null(A) \\
+          n = m + null(A) \\
+          null(A) = n - m
+        \end{gather}
+      \item
+        \begin{gather}
+          null(A) = dim(ker(A))
+        \end{gather}
+        Then, $ker(A)$ can have a basis $B$ s.t. $Span(B) = ker(A)$.
+        i.e.
+        \begin{gather}
+          \forall \vec{v} \in ker(A),
+          \exists a_1, ..., a_{n-m} \in \field{F}_2, \\
+          \vec{v} = a_1 \vec{b}_1 + \ldots + a_{n-m} \vec{b}_{n-m} (b_i \in B)
+        \end{gather}
+        The answer is $2^{n-m}$.
+      \item
+        \begin{gather}
+          \forall \vec{x}
+          \text{s.t.}
+          \begin{cases}
+            A \vec{x} = \vec{b} \\
+            A \vec{x_0} = \vec{b}
+          \end{cases} \\
+          A (\vec{x} - \vec{x}_0) = 0 \\
+          \vec{x} - \vec{x}_0 \in ker(A)
+        \end{gather}
     \end{subp}
 
   \item
