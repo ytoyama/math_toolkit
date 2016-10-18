@@ -131,9 +131,9 @@
         Then assume $\varphi = \varphi^*$. \\
         If $\vec{v} \ne \vec{w} \in V$,
         \begin{gather}
-          <\vec{v}_0, \vec{w}> = <\vec{v}, \varphi^*(\vec{w})> \\
-          <\vec{v}_0, \vec{w}> = <\vec{v}, \vec{v}_0> \\
-          <\vec{w}, \vec{v}_0> = <\vec{v}, \vec{v}_0> \\
+          \ip{\vec{v}_0}{\vec{w}} = \ip{\vec{v}}{\varphi^*(\vec{w})} \\
+          \ip{\vec{v}_0}{\vec{w}} = \ip{\vec{v}}{\vec{v}_0} \\
+          \ip{\vec{w}}{\vec{v}_0} = \ip{\vec{v}}{\vec{v}_0} \\
           \vec{v} = \vec{w}
         \end{gather}
         This is contradition. \\
@@ -144,8 +144,8 @@
     \begin{subp}
       \item
         \begin{gather}
-          <\varphi(\vec{v}), \vec{w}> = <\vec{v}, \varphi^*(\vec{w})> \\
-          <\varphi^*(\vec{w}), \vec{v}> = <\vec{w}, \varphi(\vec{w})> \\
+          \ip{\varphi(\vec{v})}{\vec{w}} = \ip{\vec{v}}{\varphi^*(\vec{w})} \\
+          \ip{\varphi^*(\vec{w})}{\vec{v}} = \ip{\vec{w}}{\varphi(\vec{w})} \\
           \therefore (\varphi^*)^* = \varphi
         \end{gather}
     \end{subp}
