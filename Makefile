@@ -1,4 +1,9 @@
-default: notes.pdf
+.SUFFIXES: .pdf .tex
 
 .tex.pdf:
-	lualatex notes.tex
+	for i in 1 2; do TEXINPUTS=..:$$TEXINPUTS lualatex ${.IMPSRC}; done
+
+default: notes.pdf
+
+clean:
+	rm -f *.pdf *.aux *.toc *.log
