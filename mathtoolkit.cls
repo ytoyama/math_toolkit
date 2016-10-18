@@ -18,7 +18,10 @@
 
 \renewcommand\ker[1]{\mathrm{ker}(#1)}
 \newcommand\im[1]{\mathrm{im}(#1)}
-\newcommand\vspan[1]{\mathrm{Span}(#1)}
+\newcommand\mspan[1]{\mathrm{Span}(#1)}
+\newcommand\mdim[1]{\mathrm{dim}(#1)}
+\newcommand\rank[1]{\mathrm{rank}(#1)}
+\newcommand\mnull[1]{\mathrm{null}(#1)}
 
 \newcommand\ip[2]{\langle  #1, #2 \rangle}
 \newcommand\st{\text{s.t.}\ }

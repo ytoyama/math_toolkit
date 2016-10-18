@@ -10,15 +10,15 @@
     \begin{subp}
       \item
         \begin{gather*}
-          dim(A) = rank(A) + null(A) \\
-          n = m + null(A) \\
-          null(A) = n - m
+          \mdim{A} = \rank{A} + \mnull{A} \\
+          n = m + \mnull{A} \\
+          \mnull{A} = n - m
         \end{gather*}
       \item
         \begin{gather*}
-          null(A) = dim(\ker{A})
+          \mnull{A} = \mdim{\ker{A}}
         \end{gather*}
-        Then, $\ker{A}$ can have a basis $B$ \st $\vspan{B} = \ker{A}$.
+        Then, $\ker{A}$ can have a basis $B$ \st $\mspan{B} = \ker{A}$.
         i.e.
         \begin{gather*}
           \forall \vec{v} \in \ker{A},
@@ -181,12 +181,12 @@
 
       \item
         \begin{align*}
-          rank(\varphi)
-          & = dim(\im{\varphi}) \\
-          & = dim((\ker{\varphi^*})^\perp) \\
-          & = dim(W) - dim(\ker(\varphi^*)) \\
-          & = dim(im(\varphi^*)) \\
-          & = rank(\varphi^*)
+          \rank{\varphi}
+          & = \mdim{\im{\varphi}} \\
+          & = \mdim{(\ker{\varphi^*}}^\perp) \\
+          & = \mdim{W} - \mdim{\ker(\varphi^*}) \\
+          & = \mdim{im(\varphi^*}) \\
+          & = \rank{\varphi^*}
         \end{align*}
 
       \item
