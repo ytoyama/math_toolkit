@@ -11,4 +11,4 @@
 
 % commands
 
-\newcommand{\w}[1]{\mathbd{#1}}
+\newcommand{\w}[1]{\mathbf{#1}}
