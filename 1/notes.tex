@@ -47,11 +47,63 @@
 
   \item
     \begin{subp}
-      \begin{gather}
-        f(c \vec{v} + (-c) \vec{v}) \ge \min \left\{ f(\vec{v}), f(\vec{v}) \right\} \\
-        \therefore f(\vec{0}_V) \ge f(\vec{v})
-      \end{gather}
+      \item
+        \begin{gather}
+          f(c \vec{v} + (-c) \vec{v}) \ge \min \left\{ f(\vec{v}), f(\vec{v}) \right\} \\
+          \therefore f(\vec{0}_V) \ge f(\vec{v})
+        \end{gather}
+      \item
+        Because every element $\vec{v}_t \in V_t$ is in V by definition.
+        \begin{gather}
+          V_t \subseteq V
+        \end{gather}
     \end{subp}
+
+  \item
+    \begin{align}
+      p(x) & = x^2 + bx +c \\
+           & = (x - r_1) (x - r_2) \\
+           & = x^2 - (r_1 + r_2) x + r_1 r_2 \\
+    \end{align}
+    \begin{gather}
+      \therefore b = - r_1 - r_2, c = r_1 r_2 \\
+    \end{gather}
+
+  \item
+    \begin{align}
+      \mu(P, Q) & = degree(PQ) \\
+                & = degree(QP) \\
+                & = \mu(Q, P)
+    \end{align}
+    \begin{align}
+      \mu(0, 0) & = degree(0) \\
+                & = 0
+    \end{align}
+    \begin{align}
+      \forall P \ne 0, \\
+      \mu(P, P) & = degree(P^2) \\
+                & = 2 degree(P) \\
+                & > 0
+    \end{align}
+    \begin{align}
+      \mu(P + Q, R) & = degree((P + Q) R) \\
+                    & = \max \left\{ degree(P), degree(Q) \right\} + degree(R)
+    \end{align}
+    \begin{align}
+      \mu(P, R) + \mu(Q, R) & = \max \left\{ degree(P) + degree(R), degree(Q) + degree(R) \right\} \\
+                            & = \max \left\{ degree(P), degree(Q) \right\} + degree(R)
+    \end{align}
+    \begin{gather}
+      \therefore \mu(P + Q, R) = \mu(P, R) + \mu(P, Q)
+    \end{gather}
+    \begin{align}
+      c \in \field{R}, \\
+      \mu(cP, R) & = degree(cPR) \\
+                 & = degree(PR) \\
+                 & \ne c \dot degree(P, R)
+    \end{align}
+    \therefore \mu(\cdot, R) is not a LT. \\
+    \therefore \mu is not a IP.
 \end{p}
 
 \end{document}
