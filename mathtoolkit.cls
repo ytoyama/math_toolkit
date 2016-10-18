@@ -7,6 +7,7 @@
 \RequirePackage{amsmath}
 \RequirePackage{amsfonts}
 \RequirePackage{amssymb}
+\RequirePackage{enumerate}
 
 \author{Yota Toyama}
 
