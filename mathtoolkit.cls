@@ -17,6 +17,9 @@
 \renewcommand\vec[1]{\mathbf{#1}}
 \newcommand\field[1]{\mathbb{#1}}
 \newcommand\ip[2]{\langle  #1, #2 \rangle}
+\renewcommand\ker[1]{\mathrm{ker}(#1)}
+\newcommand\im[1]{\mathrm{im}(#1)}
+\renewcommand\span[1]{\mathrm{Span}(#1)}
 
 \let\oldtherefore\therefore
 \renewcommand\therefore{\oldtherefore~}
