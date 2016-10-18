@@ -19,7 +19,7 @@
 \newcommand\ip[2]{\langle  #1, #2 \rangle}
 \renewcommand\ker[1]{\mathrm{ker}(#1)}
 \newcommand\im[1]{\mathrm{im}(#1)}
-\renewcommand\span[1]{\mathrm{Span}(#1)}
+\newcommand\vspan[1]{\mathrm{Span}(#1)}
 
 \let\oldtherefore\therefore
 \renewcommand\therefore{\oldtherefore~}

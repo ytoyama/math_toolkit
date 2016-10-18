@@ -15,12 +15,12 @@
         \end{gather}
       \item
         \begin{gather}
-          null(A) = dim(ker(A))
+          null(A) = dim(\ker{A})
         \end{gather}
-        Then, $ker(A)$ can have a basis $B$ s.t. $Span(B) = ker(A)$.
+        Then, $\ker{A}$ can have a basis $B$ s.t. $\vspan{B} = \ker{A}$.
         i.e.
         \begin{gather}
-          \forall \vec{v} \in ker(A),
+          \forall \vec{v} \in \ker{A},
           \exists a_1, ..., a_{n-m} \in \field{F}_2, \\
           \vec{v} = a_1 \vec{b}_1 + \dots + a_{n-m} \vec{b}_{n-m} (b_i \in B)
         \end{gather}
@@ -34,12 +34,12 @@
             A \vec{x_0} = \vec{b}
           \end{cases} \\
           \therefore A (\vec{x} - \vec{x}_0) = 0 \\
-          \vec{x} - \vec{x}_0 \in ker(A)
+          \vec{x} - \vec{x}_0 \in \ker{A}
         \end{gather}
         Then, choosing each element of $\vec{x}$ carefully (1 or 0),
         $\vec{x} - \vec{x}_0$ can be any element of $\field{F}^n_2$.
         \begin{gather}
-          \therefore \left\{ \vec{x} - \vec{x}_0 | A \vec{x} = b \right\} = ker(A)
+          \therefore \left\{ \vec{x} - \vec{x}_0 | A \vec{x} = b \right\} = \ker{A}
         \end{gather}
         \therefore $\vec{x} - \vec{x}_0$ has $2^{n-m}$ solutions. \\
         \therefore $\vec{x}$ has $2^{n-m}$ solutions. \\
@@ -150,15 +150,15 @@
         \end{gather}
       \item
         \begin{gather}
-          \forall \vec{v} \in ker(\varphi), \varphi(\vec{v}) = 0 \\
-          \forall \vec{v'} \in (im(\varphi^*))^\perp, \forall \vec{w} \in W, \\
+          \forall \vec{v} \in \ker{\varphi}, \varphi(\vec{v}) = 0 \\
+          \forall \vec{v'} \in (\im{\varphi^*})^\perp, \forall \vec{w} \in W, \\
           \ip{\vec{v}}{\varphi^*(\vec{w})} = 0 \\
           \ip{\varphi(\vec{v})}{\vec{w}} = 0 \\
-          \therefore if \vec{v} \in ker(\varphi), \\
+          \therefore \text{if} \vec{v} \in \ker{\varphi}, \\
           \varphi(\vec{v}) = 0
           \therefore \forall \vec{w}, \ip{\varphi(\vec{v})}{\vec{w}} = 0 \\
                                       \ip{\vec{v}}{\varphi^*(\vec{w})} = 0 \\
-                                      \vec{v} \in (im(\varphi^*))^\perp \\
+                                      \vec{v} \in (\im{\varphi^*})^\perp \\
         \end{gather}
     \end{subp}
 \end{p}
