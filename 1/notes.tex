@@ -102,8 +102,53 @@
                  & = degree(PR) \\
                  & \ne c \dot degree(P, R)
     \end{align}
-    \therefore \mu(\cdot, R) is not a LT. \\
-    \therefore \mu is not a IP.
+    \therefore $\mu(\cdot, R)$ is not a LT. \\
+    \therefore $\mu$ is not a IP.
+
+  \item
+    \begin{gather}
+      \alpha \beta \vec{x} = \lambda \vec{x} \\
+      \beta \alpha \beta \vec{x} = \beta (\lambda \vec{x}) \\
+      \beta \alpha (\beta \vec{x}) = \lambda (\beta \vec{x}) \\
+    \end{gather}
+    \therefore $\lambda$ is an eigenvalue of $\beta \alpha$.
+
+  \item
+    \begin{subp}
+      \item
+        \begin{gather}
+          \varphi(\vec{v}) = \lambda \vec{v} \\
+          \varphi(\vec{v}) = \lambda \varphi(\vec{v}) \\
+          (\lambda - 1) \varphi(\vec{v}) = 0 \\
+          \lambda = 1_\field{F} \vee \varphi(\vec{v}) = 0 \\
+          \lambda = 1_\field{F} \vee \varphi(\vec{v}) = 0_\field{F} \vec{v} \\
+          \therefore \lambda \in \left\{ 0_\field{F}, 1_\field{F} \right\}
+        \end{gather}
+
+      \item
+        Let $\forall \vec{v}, \varphi(\vec{v}) = \vec{v}_0$.
+        ($\vec{v}_0$ is fixed.) \\
+        Then assume $\varphi = \varphi^*$. \\
+        If $\vec{v} \ne \vec{w} \in V$,
+        \begin{gather}
+          <\vec{v}_0, \vec{w}> = <\vec{v}, \varphi^*(\vec{w})> \\
+          <\vec{v}_0, \vec{w}> = <\vec{v}, \vec{v}_0> \\
+          <\vec{w}, \vec{v}_0> = <\vec{v}, \vec{v}_0> \\
+          \vec{v} = \vec{w}
+        \end{gather}
+        This is contradition. \\
+        \therefore not always $\varphi = \varphi^*$.
+    \end{subp}
+
+  \item
+    \begin{subp}
+      \item
+        \begin{gather}
+          <\varphi(\vec{v}), \vec{w}> = <\vec{v}, \varphi^*(\vec{w})> \\
+          <\varphi^*(\vec{w}), \vec{v}> = <\vec{w}, \varphi(\vec{w})> \\
+          \therefore (\varphi^*)^* = \varphi
+        \end{gather}
+    \end{subp}
 \end{p}
 
 \end{document}
