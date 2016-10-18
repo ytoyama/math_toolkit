@@ -17,7 +17,7 @@
         \begin{gather*}
           null(A) = dim(\ker{A})
         \end{gather*}
-        Then, $\ker{A}$ can have a basis $B$ s.t. $\vspan{B} = \ker{A}$.
+        Then, $\ker{A}$ can have a basis $B$ \st $\vspan{B} = \ker{A}$.
         i.e.
         \begin{gather*}
           \forall \vec{v} \in \ker{A},
@@ -27,8 +27,7 @@
         \therefore The answer is $2^{n-m}$.
       \item
         \begin{gather*}
-          \forall \vec{x}
-          \text{s.t.}
+          \forall \vec{x} \st
           \begin{cases}
             A \vec{x} = \vec{b} \\
             A \vec{x_0} = \vec{b}
@@ -148,6 +147,7 @@
           \ip{\varphi^*(\vec{w})}{\vec{v}} = \ip{\vec{w}}{\varphi(\vec{w})} \\
           \therefore (\varphi^*)^* = \varphi
         \end{gather*}
+
       \item
         \begin{gather*}
           \forall \vec{v} \in \ker{\varphi}, \varphi(\vec{v}) = 0 \\
@@ -159,6 +159,54 @@
           \therefore \forall \vec{w}, \ip{\varphi(\vec{v})}{\vec{w}} = 0 \\
                                       \ip{\vec{v}}{\varphi^*(\vec{w})} = 0 \\
                                       \vec{v} \in (\im{\varphi^*})^\perp \\
+        \end{gather*}
+
+      \item
+        \begin{gather*}
+          \forall \vec{v} \in V \\
+          \text{If} \vec{w} \in \im{\varphi}, w = \varphi(\vec{v}) \\
+          \ip{\varphi(\vec{v})}{\vec{w}'} = \ip{\vec{v}}{\varphi(\vec{w}')} = 0 \\
+          \therefore \vec{w} \in (\ker{\varphi^*})^\perp \\
+          \text{If} \vec{w} \in (\ker{\varphi^*})^\perp, \\
+          \forall \vec{w}' \in W \st \varphi^*(\vec{w}') = 0_V, \ip{\vec{w}}{\vec{w}'} = 0 \\
+          \begin{aligned}
+            \forall \vec{v} \in V,
+              & \ip{\vec{v}}{\varphi^*(\vec{w}')} = 0 \\
+              & \ip{\varphi(\vec{v})}{\vec{w}'} = 0 \\
+              & \varphi(\vec{v}) = \vec{w}
+          \end{aligned}
+          \therefore \vec{w} \in \im{\varphi}
+        \end{gather*}
+
+      \item
+        \begin{align*}
+          rank(\varphi)
+          & = dim(\im{\varphi}) \\
+          & = dim((\ker{\varphi^*})^\perp) \\
+          & = dim(W) - dim(\ker(\varphi^*)) \\
+          & = dim(im(\varphi^*)) \\
+          & = rank(\varphi^*)
+        \end{align*}
+
+      \item
+        \begin{gather*}
+          \text{Let} A = BC, B \in \field{C}^{m \times r}, C \in \field{C}^{r \times n} \\
+          \begin{aligned}
+            \text{then}
+            & A_{i, :} = \sum_{j=1}^r B_{i, j} C_{i, :} \\
+            & A_{:, i} = \sum_{j=1}^r C_{j, i} B_{:, i} \\
+          \end{aligned}
+          \therefore \begin{cases}
+            rank_{row}(A) \le rank_{row}(C) \le r
+            rank_{column}(A) \le rank_{column}(B) \le r
+          \end{cases}
+        \end{gather*}
+        Choose a minimal $r$. \\
+        Then rows of $C$ form a minimal spanning set of rows of $A$. \\
+        And, columns of $C$ form a minimal spanning set of columns of $A$. \\
+        \therefore $r$ is the rank of both row and column spaces of $A$. \\
+        \begin{gather*}
+          \therefore rank_{row}(A) = rank_{column}(A)
         \end{gather*}
     \end{subp}
 \end{p}

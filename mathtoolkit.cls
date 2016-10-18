@@ -20,6 +20,7 @@
 \renewcommand\ker[1]{\mathrm{ker}(#1)}
 \newcommand\im[1]{\mathrm{im}(#1)}
 \newcommand\vspan[1]{\mathrm{Span}(#1)}
+\newcommand\st{\text{s.t.}}
 
 \let\oldtherefore\therefore
 \renewcommand\therefore{\oldtherefore~}
