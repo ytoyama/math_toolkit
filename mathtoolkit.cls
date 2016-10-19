@@ -5,7 +5,7 @@
 \RequirePackage{amsfonts}
 \RequirePackage{amssymb}
 \RequirePackage{enumerate}
-\RequirePackage{wasysym}
+\RequirePackage{marvosym}
 
 \author{Yota Toyama}
 
@@ -27,7 +27,7 @@
 \newcommand\rank[1]{\mathrm{rank}(#1)}
 \newcommand\mnull[1]{\mathrm{null}(#1)}
 \renewcommand\deg[1]{\mathrm{degree}(#1)}
-\newcommand\contradiction{\lightning}
+\newcommand\contradiction{\Lightning}
 
 \newcommand\ip[2]{\langle  #1, #2 \rangle}
 \newcommand\st{\text{s.t.}}
