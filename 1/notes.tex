@@ -195,24 +195,20 @@
           & = \rank{\varphi^*}
         \end{align*}
 
-      \item
+      \item In disscussion with Tomoki Tsujimura,
         \begin{gather*}
-          \text{Let}\ A = BC, B \in \field{C}^{m \times r}, C \in \field{C}^{r \times n} \\
           \begin{aligned}
-            \text{then}\
-            & A_{i, :} = \sum_{j=1}^r B_{i, j} C_{i, :} \\
-            & A_{:, i} = \sum_{j=1}^r C_{j, i} B_{:, i}
+            rank(A) & = rank(A^*) \because \text{(d)} \\
+            rank_{row}(A) & = rank_{row}(A^*) \\
+            rank_{row}(A) & = rank_{column}(\conj{A})
           \end{aligned} \\
-          \therefore \begin{cases}
-            rank_{row}(A) \le rank_{row}(C) \le r \\
-            rank_{column}(A) \le rank_{column}(B) \le r
-          \end{cases}
-        \end{gather*}
-        Choose a minimal $r$. \\
-        Then rows of $C$ form a minimal spanning set of rows of $A$. \\
-        And, columns of $C$ form a minimal spanning set of columns of $A$. \\
-        \therefore $r$ is the rank of both row and column spaces of $A$. \\
-        \begin{gather*}
+          \begin{aligned}
+            \forall n \in \field{N}, \forall \vec{v}, \vec{w} \in \field{C}^n
+            \st \ip{\vec{v}}{\vec{w}} & = 0, \\
+            \conj{\ip{\vec{v}}{\vec{w}}} & = 0 \\
+            \conj{\vec{v}^T \conj{\vec{w}}} & = 0 \\
+            \conj{\vec{v}}^T \conj{\conj{\vec{w}}} & = 0
+          \end{aligned} \\
           \therefore rank_{row}(A) = rank_{column}(A)
         \end{gather*}
     \end{subp}

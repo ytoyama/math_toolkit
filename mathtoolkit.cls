@@ -19,6 +19,7 @@
 
 \newcommand\field[1]{\mathbb{#1}}
 \renewcommand\vec[1]{\mathbf{#1}}
+\newcommand\conj[1]{\overline{#1}}
 
 \renewcommand\ker[1]{\mathrm{ker}(#1)}
 \newcommand\im[1]{\mathrm{im}(#1)}
