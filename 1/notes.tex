@@ -34,7 +34,7 @@
         Then, choosing each element of $\vec{x}$ carefully (1 or 0),
         $\vec{x} - \vec{x}_0$ can be any element of $\field{F}^n_2$.
         \begin{gather*}
-          \therefore \left\{ \vec{x} - \vec{x}_0 | A \vec{x} = b \right\} = \ker{A}
+          \therefore \left\{ \vec{x} - \vec{x}_0 | A \vec{x} = \vec{b} \right\} = \ker{A}
         \end{gather*}
         \therefore $\vec{x} - \vec{x}_0$ has $2^{n-m}$ solutions. \\
         \therefore $\vec{x}$ has $2^{n-m}$ solutions. \\
@@ -43,10 +43,11 @@
   \item
     \begin{subp}
       \item
-        \begin{gather*}
-          f(c \vec{v} + (-c) \vec{v}) \ge \min \left\{ f(\vec{v}), f(\vec{v}) \right\} \\
-          \therefore f(\vec{0}_V) \ge f(\vec{v})
-        \end{gather*}
+        \begin{align*}
+          \forall \vec{v},
+          & f(c \vec{v} + (-c) \vec{v}) \ge \min \left\{ f(\vec{v}), f(\vec{v}) \right\} \\
+          & f(\vec{0}_V) \ge f(\vec{v})
+        \end{align*}
       \item
         Because every element $\vec{v}_t \in V_t$ is in V by definition.
         \begin{gather*}
