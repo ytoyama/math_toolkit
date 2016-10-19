@@ -121,18 +121,18 @@
         \end{gather*}
 
       \item
-        Let $\forall \vec{v}, \varphi(\vec{v}) = \vec{v}_0$.
-        ($\vec{v}_0$ is fixed.) \\
-        Then assume $\varphi = \varphi^*$. \\
-        If $\vec{v} \ne \vec{w} \in V$,
+        Let $\forall \vec{v}, \varphi(\vec{v}) = \vec{v}_0$. ($\vec{v}_0$ is fixed.) \\
+        and assume $\varphi = \varphi^*$. \\
         \begin{gather*}
-          \ip{\vec{v}_0}{\vec{w}} = \ip{\vec{v}}{\varphi^*(\vec{w})} \\
-          \ip{\vec{v}_0}{\vec{w}} = \ip{\vec{v}}{\vec{v}_0} \\
-          \ip{\vec{w}}{\vec{v}_0} = \ip{\vec{v}}{\vec{v}_0} \\
-          \vec{v} = \vec{w}
+          \forall \vec{v}, \vec{w} \in V \st \vec{v} \ne \vec{w}, \\
+          \begin{aligned}
+            \ip{\vec{v}_0}{\vec{w}} & = \ip{\vec{v}}{\varphi^*(\vec{w})} \\
+            \ip{\vec{v}_0}{\vec{w}} & = \ip{\vec{v}}{\vec{v}_0} \\
+            \ip{\vec{w}}{\vec{v}_0} & = \ip{\vec{v}}{\vec{v}_0} \\
+            \vec{v} & = \vec{w} \contradiction
+          \end{aligned}
         \end{gather*}
-        This is contradition. \\
-        \therefore not always $\varphi = \varphi^*$.
+        \therefore not always $\varphi = \varphi^*$
     \end{subp}
 
   \item
