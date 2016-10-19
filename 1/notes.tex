@@ -165,19 +165,24 @@
 
       \item
         \begin{gather*}
-          \forall \vec{v} \in V \\
-          \text{If} \vec{w} \in \im{\varphi}, w = \varphi(\vec{v}) \\
-          \ip{\varphi(\vec{v})}{\vec{w}'} = \ip{\vec{v}}{\varphi(\vec{w}')} = 0 \\
-          \therefore \vec{w} \in (\ker{\varphi^*})^\perp \\
-          \text{If} \vec{w} \in (\ker{\varphi^*})^\perp, \\
-          \forall \vec{w}' \in W \st \varphi^*(\vec{w}') = 0_V, \ip{\vec{w}}{\vec{w}'} = 0 \\
           \begin{aligned}
-            \forall \vec{v} \in V,
-              & \ip{\vec{v}}{\varphi^*(\vec{w}')} = 0 \\
-              & \ip{\varphi(\vec{v})}{\vec{w}'} = 0 \\
-              & \varphi(\vec{v}) = \vec{w}
+            \forall \vec{w} \in \im{\varphi},
+            \exists \vec{v} \in V \st \vec{w} = \varphi(\vec{v}),
+            \forall \vec{w}' \in \ker{\varphi^*},
+            \ip{\vec{w}}{\vec{w}'}
+            & = \ip{\varphi(\vec{v})}{\vec{w}'} \\
+            & = \ip{\vec{v}}{\varphi^*(\vec{w}')} \\
+            & = 0 \\
+            \vec{w} & \in (\ker{\varphi^*})^\perp
           \end{aligned} \\
-          \therefore \vec{w} \in \im{\varphi}
+          \begin{aligned}
+            % \forall \vec{w} \in (\ker{\varphi^*})^\perp,
+            \forall \vec{v} \in V,
+            \forall \vec{w} \in \ker{\varphi^*},
+            \varphi^*(\vec{w}) & = 0 \\
+            \ip{\vec{v}}{\varphi^*(\vec{w})} & = 0 \\
+          \end{aligned} \\
+          \therefore \im{\varphi} = (\ker{\varphi^*})^\perp
         \end{gather*}
 
       \item
