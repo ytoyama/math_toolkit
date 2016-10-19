@@ -68,36 +68,36 @@
 
   \item
     \begin{align*}
-      \mu(P, Q) & = degree(PQ) \\
-                & = degree(QP) \\
+      \mu(P, Q) & = \deg{PQ} \\
+                & = \deg{QP} \\
                 & = \mu(Q, P)
     \end{align*}
     \begin{align*}
-      \mu(0, 0) & = degree(0) \\
+      \mu(0, 0) & = \deg{0} \\
                 & = 0
     \end{align*}
     \begin{align*}
       \forall P \ne 0, \\
-      \mu(P, P) & = degree(P^2) \\
-                & = 2 degree(P) \\
+      \mu(P, P) & = \deg{P^2} \\
+                & = 2 \deg{P} \\
                 & > 0
     \end{align*}
     \begin{align*}
-      \mu(P + Q, R) & = degree((P + Q) R) \\
-                    & = \max \left\{ degree(P), degree(Q) \right\} + degree(R)
+      \mu(P + Q, R) & = \deg{(P + Q} R) \\
+                    & = \max \left\{ \deg{P}, \deg{Q} \right\} + \deg{R}
     \end{align*}
     \begin{align*}
-      \mu(P, R) + \mu(Q, R) & = \max \left\{ degree(P) + degree(R), degree(Q) + degree(R) \right\} \\
-                            & = \max \left\{ degree(P), degree(Q) \right\} + degree(R)
+      \mu(P, R) + \mu(Q, R) & = \max \left\{ \deg{P} + \deg{R}, \deg{Q} + \deg{R} \right\} \\
+                            & = \max \left\{ \deg{P}, \deg{Q} \right\} + \deg{R}
     \end{align*}
     \begin{gather*}
       \therefore \mu(P + Q, R) = \mu(P, R) + \mu(P, Q)
     \end{gather*}
     \begin{align*}
       c \in \field{R}, \\
-      \mu(cP, R) & = degree(cPR) \\
-                 & = degree(PR) \\
-                 & \ne c \cdot degree(P, R)
+      \mu(cP, R) & = \deg{cPR} \\
+                 & = \deg{PR} \\
+                 & \ne c \cdot \deg{P, R}
     \end{align*}
     \therefore $\mu(\cdot, R)$ is not a LT. \\
     \therefore $\mu$ is not a IP.

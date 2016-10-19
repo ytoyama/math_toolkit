@@ -25,6 +25,7 @@
 \newcommand\mdim[1]{\mathrm{dim}(#1)}
 \newcommand\rank[1]{\mathrm{rank}(#1)}
 \newcommand\mnull[1]{\mathrm{null}(#1)}
+\renewcommand\deg[1]{\mathrm{degree}(#1)}
 
 \newcommand\ip[2]{\langle  #1, #2 \rangle}
 \newcommand\st{\text{s.t.}}
