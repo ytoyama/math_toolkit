@@ -1,6 +1,9 @@
 \documentclass{mathtoolkit}
 \nth{1}
 
+\newcommand\row{\mathrm{row}}
+\newcommand\column{\mathrm{column}}
+
 \begin{document}
 
 \maketitle
@@ -218,8 +221,8 @@
         \begin{gather*}
           \begin{aligned}
             \rank{A} & = \rank{A^*} \because \text{(d)} \\
-            \rank[row]{A} & = \rank[row]{A^*} \\
-            \rank[row]{A} & = \rank[column]{\conj{A}}
+            \rank[\row]{A} & = \rank[\row]{A^*} \\
+            \rank[\row]{A} & = \rank[\column]{\conj{A}}
           \end{aligned} \\
           \begin{aligned}
             \forall n \in \field{N}, \forall \vec{v}, \vec{w} \in \field{C}^n
@@ -228,7 +231,7 @@
             \conj{\vec{v}^T \conj{\vec{w}}} & = 0 \\
             \conj{\vec{v}}^T \conj{\conj{\vec{w}}} & = 0
           \end{aligned} \\
-          \therefore \rank[row]{A} = \rank[column]{A}
+          \therefore \rank[\row]{A} = \rank[\column]{A}
         \end{gather*}
     \end{subp}
 \end{p}
