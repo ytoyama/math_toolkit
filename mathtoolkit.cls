@@ -25,7 +25,8 @@
 \newcommand\im[1]{\mathrm{im}(#1)}
 \newcommand\mspan[1]{\mathrm{Span}(#1)}
 \renewcommand\dim[1]{\mathrm{dim}(#1)}
-\newcommand\rank[1]{\mathrm{rank}(#1)}
+\def\empty{}
+\newcommand\rank[2][]{\ifx#1\empty\mathrm{rank}\else\mathrm{rank}_{#1}\fi(#2)}
 \newcommand\mnull[1]{\mathrm{null}(#1)}
 \renewcommand\deg[1]{\mathrm{degree}(#1)}
 \newcommand\contradiction{\text{\Lightning}}
