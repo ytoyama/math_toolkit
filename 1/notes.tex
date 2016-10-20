@@ -159,18 +159,19 @@
         \end{gather*}
 
       \item
-        Let $\varphi$ be a projection
-        $\st \forall \vec{v} \in \field{R}^n \text{or} \field{C}^n, \varphi(\vec{v}) = 1$
-        and assume $\varphi = \varphi^*$.
+        Let \varphi is a projection on $\field{F}^n = \field{R}^n \text{or} \field{C}^n$
+        over $\field{F}$. \\
+        $\varphi$ is p.s.d. \because (a) \\
         \begin{gather*}
-          \forall \vec{v}, \vec{w} \in \field{R}^n \text{or} \field{C}^n \st \vec{v} \ne \vec{w}, \\
+          \exists \alpha : \field{F}^n \rightarrow \field{F}^n \st \varphi = \alpha^* \alpha \\
+          \forall \vec{v}, \vec{w} \in \field{F}^n, \\
           \begin{aligned}
-            \ip{\varphi(\vec{v})}{\vec{w}} & = \ip{\vec{v}}{\varphi^*(\vec{w})} \\
-            \ip{1}{\vec{w}} & = \ip{\vec{v}}{1} \\
-            \vec{v} & = \vec{w} \contradiction
-          \end{aligned}
+            \ip{\varphi \vec{v}}{\vec{w}} & = \ip{\alpha^*\alpha\vec{v}}{\vec{w}} \\
+                                          & = \ip{\vec{v}}{\alpha^*\alpha\vec{w}} \\
+                                          & = \ip{\vec{v}}{\varphi^*\vec{w}}
+          \end{aligned} \\
+          \therefore \varphi = \varphi^*
         \end{gather*}
-        \therefore Not always $\varphi = \varphi^*$
     \end{subp}
 
   \item
