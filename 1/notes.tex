@@ -64,8 +64,8 @@
       \end{aligned} \\
       \therefore b = - r_1 - r_2, c = r_1 r_2 \\
       \therefore \varphi_1(x_1, x_2, x_3) = x_1 - (r_1 + r_2) x_2 + r_1 r_2 x_3 \\
+      \forall f \in \field{R}^\field{N} \text{of an eigenvector of $\varphi_{left}$ with an eigenvalue $\lambda$}, \\
       \begin{aligned}
-        \forall f \in \field{R}^\field{N} \text{of an eigenvector of $\varphi_{left}$ with an eigenvalue $\lambda$}, \\
         (\varphi_2(f))(n)
         & = \varphi_1(f(n), f(n+1), f(n+2)) \\
         & = f(n) - (r_1 + r_2) f(n+1) + r_1 r_2 f(n+2) \\
@@ -78,7 +78,7 @@
       \end{aligned} \\
     \end{gather*}
     Let $f_1, f_2 \in \field{R}^\field{N}$ be 2 eigenvectors of $\varphi_{left}$
-    with eignevalues $r_1$ and $r_2 \st f_1(n) = r_1^n$ and $f_2(n) = r_2^n$.
+    with eignevalues $r_1, r_2 \st f_1(n) = r_1^n, f_2(n) = r_2^n$.
     Then $\varphi_2(f_1) = \varphi_2(f_2) = 0$.
     \begin{gather*}
       \left\{ f_1, f_2 \right\} \subseteq \ker{\varphi_2} \\
