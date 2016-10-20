@@ -49,13 +49,13 @@
         \begin{align*}
           \forall \vec{v},
           f(c \vec{v} + (-c) \vec{v}) & \ge \min \left\{ f(\vec{v}), f(\vec{v}) \right\} \\
-          f(\vec{0}_V) & \ge f(\vec{v})
+          f(\vec{0}) & \ge f(\vec{v})
         \end{align*}
       \item
         \begin{gather*}
           V_t \subseteq V \text{by definition} \\
           \vec{0} \in V_t \because \text{(a)} \\
-          \forall t \in [0, f(0_V)], \forall v\vec{v}, \vec{w} \in V_t, \\
+          \forall t \in [0, f(\vec{0})], \forall v\vec{v}, \vec{w} \in V_t, \\
           \begin{aligned}
             f(\vec{v} + \vec{w}) & \ge \min \left\{ f(\vec{v}), f(\vec{w}) \right\} \\
                                  & \ge t
