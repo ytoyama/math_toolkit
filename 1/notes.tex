@@ -52,9 +52,27 @@
           f(\vec{0}_V) & \ge f(\vec{v})
         \end{align*}
       \item
-        Because every element $\vec{v}_t \in V_t$ is in V by definition.
         \begin{gather*}
-          V_t \subseteq V
+          V_t \subseteq V \text{by definition} \\
+          \vec{0} \in V_t \because \text{(a)} \\
+          \forall t \in [0, f(0_V)], \forall v\vec{v}, \vec{w} \in V_t, \\
+          \begin{aligned}
+            f(\vec{v} + \vec{w}) & \ge \min \left\{ f(\vec{v}), f(\vec{w}) \right\} \\
+                                 & \ge t
+          \end{aligned} \\
+          \therefore \vec{v} + \vec{w} \in V \\
+          \text{and} \forall c \in \field{F},
+          \begin{aligned}
+            f(c\vec{v}) & \ge \min \left\{ f(\vec{v}), f(\vec{0}) \right\} \\
+                        & \ge f(\vec{v}) \\
+                        & \ge t
+          \end{aligned} \\
+          \begin{aligned}
+            f(- \vec{v}) & \ge \min \left\{ f(\vec{v}), f(\vec{0}) \right\} \\
+                         & \ge f(\vec{v}) \\
+                         & \ge t
+          \end{aligned} \\
+          \therefore - \vec{v} \in V_t
         \end{gather*}
     \end{subp}
 
